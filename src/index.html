@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="index.js"></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<title>RPS_Game</title>
+	</head>
+
+	<body class="bg-white h-screen">
+		<!-- TopBar -->
+		<div class="flex items-center justify-center w-full h-[100px]">
+			<p class="text-[32px] text-neutral-700 font-bold" id="score_text">SCORE</p>
+		</div>
+
+		<div class="flex flex-col justify-center items-center w-full py-4 gap-24 h-[70%] mt-4">
+			<!-- Computer Choice -->
+			<div class="w-full flex flex-col justify-center items-center gap-4">
+				<p class="text-[32px] text-neutral-500">CPU</p>
+				<div class="flex md:flex-row flex-col justify-evenly md:w-[50%]">
+					<p class="text-[44px] font-bold text-neutral-300" id="choice_rock">Rock</p>
+					<p class="text-[44px] font-bold text-neutral-300" id="choice_paper">Paper</p>
+					<p class="text-[44px] font-bold text-neutral-300" id="choice_scissors">Scissors</p>
+				</div>
+			</div>
+
+			<!-- User Choice -->
+			<div class="w-full flex flex-col justify-center items-center gap-4">
+				<p class="text-[32px] text-neutral-500">Choose an option</p>
+				<div class="flex md:flex-row flex-col justify-evenly md:w-[50%]">
+					<p onclick="choose(0)" class="text-[44px] font-bold text-neutral-600 hover:text-neutral-900 cursor-pointer">Rock</p>
+					<p onclick="choose(1)" class="text-[44px] font-bold text-neutral-600 hover:text-neutral-900 cursor-pointer">Paper</p>
+					<p onclick="choose(2)" class="text-[44px] font-bold text-neutral-600 hover:text-neutral-900 cursor-pointer">Scissors</p>
+				</div>
+			</div>
+
+			<!-- Result -->
+			<div class="w-full flex justify-center items-center gap-2">
+				<p class="text-[24px]" id="result_text">Result</p>
+			</div>
+		</div>
+
+	</body>
+</html>
